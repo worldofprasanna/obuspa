@@ -22,3 +22,5 @@ ylwrap
 *.o
 *.m4
 .dirstamp
+config/
+tags
