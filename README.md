@@ -4,6 +4,13 @@ Open Broadband-User Services Platform-Agent (OB-USP-Agent) is an open source pro
 
 ## Quick Start
 
+For running the agent using Docker and Docker compose, use the following commands,
+
+`docker build -t obuspa .`
+`docker-compose up`
+
+This will bring up USP Agent and ActiveMQ which can communicate with each other.
+
 For build instructions, please refer to [QUICK_START_GUIDE](https://github.com/BroadbandForum/obuspa/blob/master/QUICK_START_GUIDE.md).
 
 ## Contributing
