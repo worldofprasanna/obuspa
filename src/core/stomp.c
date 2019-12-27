@@ -2623,7 +2623,7 @@ void HandleRxMsg_RunningState(stomp_connection_t *sc, int msg_size)
 
     // Check the content-type
     // NOTE: We still allow "application/octet-stream", as some test instances of controllers have not yet moved over to the new BBF value
-    is_present = GetStompHeaderValue("content-type:", sc->rxframe, msg_size, content_type, sizeof(content_type));
+    is_present = GetStompHeaderValue("type:", sc->rxframe, msg_size, content_type, sizeof(content_type));
     if (is_present)
     {
         if ((strcmp(content_type, BBF_STOMP_CONTENT_TYPE) != 0) && (strcmp(content_type, "application/octet-stream") != 0))

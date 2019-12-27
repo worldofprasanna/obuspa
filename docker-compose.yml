@@ -11,6 +11,8 @@ services:
 
   obuspa:
     image: obuspa
+    depends_on:
+      - activemq
     volumes:
       - ./config:/app/config
     networks:
